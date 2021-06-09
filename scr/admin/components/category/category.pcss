@@ -1,0 +1,17 @@
+@mixin phones() {
+  @media screen and (max-width: $bp-phones) {
+    @content;
+  }
+}
+
+.bottom-line {
+  padding-top: 70px;
+  margin-top: auto;
+  padding-left: 25%;
+}
+
+@include phones {
+  .skills {
+    flex-direction: column;
+  }
+}

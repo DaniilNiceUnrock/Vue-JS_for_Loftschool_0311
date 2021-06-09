@@ -1,0 +1,33 @@
+.edit-line-component {
+  &.blocked {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    pointer-events: none;
+  }
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+}
+
+.button-icon {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.warning {
+  border-bottom: 8px solid red;
+}
