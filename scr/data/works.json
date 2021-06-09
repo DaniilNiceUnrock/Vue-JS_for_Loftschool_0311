@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "title": "Dostavka-tsvetov",
+    "skills": "PHP, CSS, Vue JS",
+    "photo": "slider-0.jpg",
+    "link": "//dostavka-tsvetov.com",
+    "desc": "Доставка цветов по Москве! Тысячи успешно доставленных букетов и довольных клиентов."
+  },
+  {
+    "id": 1,
+    "title": "Fixioma.ru",
+    "skills": "PHP, CSS, JS",
+    "photo": "slider-1.jpg",
+    "link": "//fixioma.ru",
+    "desc": "«Fixioma» предлагает промышленный крепеж и монтажное оборудование с собственных складов в России или под заказ из Европы и Азии."
+  },
+  {
+    "id": 2,
+    "title": "Black8",
+    "skills": "HTML, CSS, JS",
+    "photo": "slider-2.jpg",
+    "link": "//black8.ru",
+    "desc": "Бильярдные столы. Различные настольные игры , дартс и головоломки. Шахматы, нарды, шашки, лото, домино."
+  },
+  {
+    "id": 3,
+    "title": "Rekantino",
+    "skills": "PHP, CSS, JavaScript",
+    "photo": "slider-3.jpg",
+    "link": "//rekantino.cw97450.tmweb.ru",
+    "desc": "Сайт по оптовой продаже детского белья"
+  },
+  {
+    "id": 4,
+    "title": "Bra-styling",
+    "skills": "JavaScript, CSS, PHP",
+    "photo": "slider-4.jpg",
+    "link": "//bra-styling.ru",
+    "desc": "Сайт по продаже женского белья"
+  }
+]

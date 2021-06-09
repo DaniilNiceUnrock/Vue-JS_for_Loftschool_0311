@@ -1,0 +1,30 @@
+.scrooll-down-btn {
+        width: 66px;
+        height: 14px;
+        left: 853px;
+        top: 941px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        color: #464E62;
+        background:transparent;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-repeat: no-repeat;
+        background: svg-load('scroll.svg', fill=$text-color, width=25px, height=25px);
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        margin-left : 90px; 
+    } 
+
+   
+    
+}

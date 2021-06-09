@@ -1,0 +1,61 @@
+script(type="text/x-template")#preview-container 
+    //-pre {{works}}
+    .works-preview  
+        display(
+            :currentWork = "currentWork"
+            :works="works"
+            @slide="slide"
+            :currentSlideData = "currentSlideData"
+        )
+        info(
+            :currentWork = "currentWork"
+        )     
+
+script(type="text/x-template")#preview-display
+    .works-preview__pictures(:data-slide="currentSlideData.id + 1")
+        img(:src="currentWork.photo").works-preview__img
+        .works-preview__thumbs 
+            thumbs( 
+                :works="reversedWorks"
+                :currentWork = "currentWork"
+            )
+        .works-previev__btns 
+        btns(
+            @slide="$emit('slide', $event)"
+        )
+               
+script(type="text/x-template")#preview-thumbs
+    ul.thumb
+        li.thumb__item(v-for="slide in works" :key="slide.id") 
+            button.thumbs__link(:class="{active: currentWork.id == slide.id}")
+                img(:src="slide.photo").thumbs__pic
+
+script(type="text/x-template")#preview-btns
+    .square-btns 
+        button(
+            type="button"
+            @click="$emit('slide', 'prev')"
+        ).square-btns__item.square-btns__item--next 
+            +icon('icon2', 'icon arrow-down')
+        button(
+            type="button"
+            @click="$emit('slide', 'next')"
+        ).square-btns__item.square-btns__item--prev
+            +icon('icon', 'icon arrow-top')
+            
+script(type="text/x-template")#preview-info
+    .works-preview__info           
+        .works-preview__tags
+            tags(
+                :tags = "tagsArray"
+            )
+        .works-preview__title  {{currentWork.title}}
+        .works-preview__desc 
+            p {{currentWork.desc}}
+        a(:href="currentWork.link" target="_blank").iconed-link  Посмотреть сайт 
+            +image(`content/site.png`, "")  
+
+script(type="text/x-template")#preview-tags
+    ul.tags 
+        li.tags__item(v-for="tag in tags")
+            p {{tag}}
