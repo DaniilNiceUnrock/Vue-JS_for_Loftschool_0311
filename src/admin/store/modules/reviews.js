@@ -25,7 +25,7 @@ export default {
     actions: {
         async get(store) {
             try {
-                const userId = 461; 
+                const userId = 3; 
                 const response = await this.$axios.get(`/reviews/${userId}`);
                 store.commit("SET_REVIEWS", response.data);
             } catch (error) {
